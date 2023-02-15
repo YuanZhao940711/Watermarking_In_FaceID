@@ -63,7 +63,7 @@ Please download pre-trained identity encoder models for training.
 
 ## Injection
 ### Preparation
-Our pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1OiH9SsQErCoFA8fOjf7zbDNIJM1GMi_Q?usp=sharing). The folder names indicate which data set the models are trained on. Please save the downloaded files into the folder `pretrained_models`.
+Our pre-trained models can be downloaded from [here](https://drive.google.com/drive/folders/1xMk-3nipL3g-XxYOFH6sYtjTWQYVYw_U?usp=sharing). The folder names indicate which data set the models are trained on. Please save the downloaded files into the folder `pretrained_models`.
 
 | Model | Description
 | :--- | :----------
