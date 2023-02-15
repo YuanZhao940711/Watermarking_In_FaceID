@@ -184,12 +184,11 @@ Please follow the introduction in the Injection section to download and save the
 If you think this code is useful or employ it in your research, please cite our paper:
 
 ```
-@article{zhao2021private,
-  title={Private-encoder: Enforcing privacy in latent space for human face images},
-  author={Zhao, Yuan and Liu, Bo and Zhu, Tianqing and Ding, Ming and Zhou, Wanlei},
-  journal={Concurrency and Computation: Practice and Experience},
-  pages={e6548},
-  year={2021},
-  publisher={Wiley Online Library}
+@inproceedings{zhao2023proactive,
+  title={Proactive Deepfake Defence via Identity Watermarking},
+  author={Zhao, Yuan and Liu, Bo and Ding, Ming and Liu, Baoping and Zhu, Tianqing and Yu, Xin},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={4602--4611},
+  year={2023}
 }
 ```
