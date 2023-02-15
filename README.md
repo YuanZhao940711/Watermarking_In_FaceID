@@ -31,13 +31,13 @@ The proposed Face Identity Watermarking framework can be used to invisibly embed
 ## Training Framework
 ### Preparation
 Please download datasets and unzip images into a folder for training. 
-- We experiment on three datasets (you can choose one of them as the training set and another one as the validation set).
+- We experiment on three datasets (you can choose one of them as the training set).
   - [CelebA aligned and cropped images (Celeba)](https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg?resourcekey=0-rJlzl934LzC-Xp28GeIBzQ).
   - [Celeba-HQ](https://drive.google.com/drive/folders/0B4qLcYyJmiz0TXY1NG02bzZVRGs?resourcekey=0-arAVTUfW9KRhN-irJchVKQ)
   - [Flickr-Faces-HQ Dataset (FFHQ)](https://drive.google.com/drive/folders/1u2xu7bSrWxrbUxk-dT-UvEJq8IjdmNTP).
 
 Please download pre-trained identity encoder models for training. 
-- The framework requires pre-trained identity encoder networks in training (You can choose one of them from below, save its pre-trained model in the folder `pretrained_models` and then set the corresponding argument in common line: `facenet_mode`).
+- The framework requires pre-trained identity encoder networks in all actions (You can choose one of them from below, save its pre-trained model in the folder `saved_models` and then set the corresponding argument in common line: `facenet_mode`).
   - [ArcFace](https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg?resourcekey=0-rJlzl934LzC-Xp28GeIBzQ).
   - [CurricularFace](https://drive.google.com/drive/folders/0B4qLcYyJmiz0TXY1NG02bzZVRGs?resourcekey=0-arAVTUfW9KRhN-irJchVKQ)
 
@@ -91,7 +91,7 @@ Here we show some samples of Injection results.
 
 ### Running, e.g.,
   ```
-  python scripts/inject_watermark.py \
+  python scripts/injection.py \
   --rand_select=Yes \
   --max_num=1000 \
   --facenet_mode=arcface \
@@ -103,12 +103,12 @@ Here we show some samples of Injection results.
   --img_dir=/directory/to/images \
   ```
   where
-  - `rand_select` indicates whether random select images for embedding.
+  - `rand_select` indicates whether randomly select images for embedding.
   - `max_num` indicates the number of images to be embedded.
   - `facenet_mode` and `facenet_dir` must be consistent with pre-trained models, e.g., if you download ArcFace's pre-trained mode, you must assign the `facenet_mode` as `arcface` and assign the `facenet_dir` to corresponding pre-trained model.
   - `facenet_dir` indicates the directory contains the pre-trained model of the identity encoder.
-  - `aadblocks_dir` indicates the directory contains the pre-trained model of the identity encoder.
-  - `attencoder_dir` indicates the directory contains the pre-trained model of the identity encoder.
+  - `aadblocks_dir` indicates the directory contains the pre-trained model of the AAD Generator.
+  - `attencoder_dir` indicates the directory contains the pre-trained model of the Attributs Encoder.
   - `seq_type` indicates the type of sequence you want to embed in images.
   - `exp_dir` contains model snapshots, image snapshots, and log files.
   - `img_dir` contains images to be embedded.
