@@ -1,7 +1,6 @@
 # Watermarking_In_FaceID
 
-Official implementation of our "Watermarking Face image's identity to defence Deepfake abuse" paper for both training and evaluation.
-
+Official implementation of our "Proactive Deepfake Defence via Identity Watermarking" paper for both training and evaluation.
 
 
 ## Paper Abstract 
