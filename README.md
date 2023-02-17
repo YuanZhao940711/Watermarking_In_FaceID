@@ -1,7 +1,6 @@
 # Watermarking_In_FaceID
 
-Official implementation of our "Proactive Deepfake Defence via Identity Watermarking" paper for both training and evaluation.
-<a href="https://openaccess.thecvf.com/content/WACV2023/papers/Zhao_Proactive_Deepfake_Defence_via_Identity_Watermarking_WACV_2023_paper.pdf">
+Official implementation of our [["Proactive Deepfake Defence via Identity Watermarking"]](https://openaccess.thecvf.com/content/WACV2023/papers/Zhao_Proactive_Deepfake_Defence_via_Identity_Watermarking_WACV_2023_paper.pdf)paper for both training and evaluation.
 
 ## Paper Abstract 
 > The explosive progress of Deepfake techniques poses unprecedented privacy and security risks to our society by creating real-looking but fake visual content.
