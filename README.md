@@ -37,7 +37,7 @@ Please download datasets and unzip images into a folder for training.
 Please download pre-trained identity encoder models for training. 
 - Our framework requires pre-trained identity encoder networks in all actions (You can choose one of them from below, save its pre-trained model in the folder `saved_models` and then set the corresponding argument in the common line: `facenet_mode`).
   - [ArcFace](https://drive.google.com/file/d/1-mS6YMbPbRG3JnHVUBgzKqcaFe_YYSYs/view?usp=share_link).
-  - [CurricularFace](https://drive.google.com/file/d/1-FzkopYzqQfW-B8-65sFmwMC66kJJzBY/view?usp=share_link)
+  - [CurricularFace](https://drive.google.com/file/d/1-FzkopYzqQfW-B8-65sFmwMC66kJJzBY/view?usp=share_link).
 
 
 ### Running, e.g.,
